@@ -1,0 +1,999 @@
+<!--
+<body>
+    <main class = "container">
+        <div class = "box">1</div>
+        <div class = "box">2</div>
+        <div class = "box">3</div>
+        <div class = "box">4</div>
+        <div class = "box">5</div>
+        <div class = "box">6</div>
+    </main>
+    </main>
+    <p>I'm studying yet, but I'll be better!</p>
+    <p2>I'm studying yet, but I'll be better!</p2>
+</body>
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    
+    <!--0 table-->
+    <table id="0">
+        <tr id="0-0">
+            <td id="0-0-0">
+                <label id="0-0-0-0" type="label" class="box">Название</label>
+            </td>
+            <td id="0-0-1">
+                <textarea id="0-0-1-0" type="textarea" class="box">test</textarea>
+            </td>
+        </tr>
+        <tr id="0-1">
+            <td id="0-1-0">
+                <label id="0-1-0-0" type="label" class="box">Срок аренды</label>
+            </td>
+            <td id="0-1-1">
+                <select id="0-1-1-0" type="select" class="box">
+                    <option value=1>1 год</option>
+                    <option value=3>3 года</option>
+                    <option value=5>5 лет</option>
+                </select>
+            </td>
+        </tr>
+    </table>
+    <br>
+
+    <!--1 table-->
+    <table id="1">
+        <th id="1-0" colspan="4">
+                <label id="1-0-0" type="label">Расчёт стоимости аренды</label>
+        </th>
+        <tr id="1-1">
+            <th id="1-1-0">
+                <label id="1-1-0-0" type="label" class="box">Параметр</label>
+            </th>
+            <th id="1-1-1">
+                <label id="1-1-1-0" type="label" class="box">Значение</label>
+            </th>
+            <th id="1-1-2">
+                <label id="1-1-2-0" type="label" class="box">Валюта</label>
+            </th>
+            <th id="1-1-3">
+                <label id="1-1-3-0" type="label" class="box">Курс</label>
+            </th>
+        </tr>
+        <tr id="1-2">
+            <td id="1-2-0">
+                <label id="1-2-0-0" type="label" class="box">Площадь</label>
+            </td>
+            <td id="1-2-1">
+                <textarea id="1-2-1-0" type = "textarea" class="box"></textarea>
+            </td>
+        </tr>
+        <tr id="1-3">
+            <td id="1-3-0">
+                <label id="1-3-0-0" type="label" class = "box">Тип ставок</label>
+            </td>
+            <td id="1-3-1">
+                <select id="1-3-1-0" type = "select" class="box">
+                    <option value="За 1 м2 в год">За 1 м2 в год</option>
+                    <option value="За 1 м2 в месяц">За 1 м2 в месяц</option>
+                    <option value="За все в месяц">За все в месяц</option>
+                </select>
+            </td>
+        </tr>
+        <tr id="1-4">
+            <td id="1-4-0">
+                <label id="1-4-0-0" type="label" class="box">НДС арендодателя</label>
+            </td>
+            <td id="1-4-1">
+                <select id="1-4-1-0" type = "select" class="box">
+                    <option value=20>20%</option>
+                    <option value=12>12%</option>
+                    <option value=0>0%</option>
+                </select>
+            </td>
+        </tr>
+        <tr id="1-5">
+            <td id="1-5-0">
+                <label id="1-5-0-0" type="label" class="box">Фикс плата, без НДС</label>
+            </td>
+            <td id="1-5-1">
+                <textarea id="1-5-1-0" type="textarea" class="box"></textarea>
+            </td>
+            <td id="1-5-2">
+                <select id="1-5-2-0" type = "select" class="box">
+                    <option value="RUB">RUB</option>
+                    <option value="USD">USD</option>
+                    <option value="EUR">EUR</option>
+                    <option value="KZT">KZT</option>
+                </select>
+            </td>
+            <td id="1-5-3">
+                <textarea id="1-5-3-0" type="textarea" class="box"></textarea>
+            </td>
+        </tr>
+        <tr id="1-6">
+            <td id="1-6-0">
+                <label id="1-6-0-0" type="label" class="box">Эксплуатац. Ставка без НДС</label>
+            </td>
+            <td id="1-6-1">
+                <textarea id="1-6-1-0" type="textarea" class="box"></textarea>
+            </td>
+            <td id="1-6-2">
+                <select id="1-6-2-0" type="select" class = "box">
+                    <option value="RUB">RUB</option>
+                    <option value="USD">USD</option>
+                    <option value="EUR">EUR</option>
+                    <option value="KZT">KZT</option>
+                </select>
+            </td>
+            <td id="1-6-3">
+                <textarea id="1-6-3-0" type="textarea" class="box"></textarea>
+            </td>
+        </tr>
+        <tr id="1-7">
+            <td id="1-7-0">
+                <label id="1-7-0-0" type="label" class="box">Маркетинг ставка без НДС</label>
+            </td>
+            <td id="1-7-1">
+                <textarea id="1-7-1-0" type="textarea" class="box"></textarea>
+            </td>
+            <td id="1-7-2">
+                <select id="1-7-2-0" type="select" class="box">
+                    <option value="RUB">RUB</option>
+                    <option value="USD">USD</option>
+                    <option value="EUR">EUR</option>
+                    <option value="KZT">KZT</option>
+                </select>
+            </td>
+            <td id="1-7-3">
+                <textarea id="1-7-3-0" type="textarea" class="box"></textarea>
+            </td>
+        </tr>
+        <tr id="1-8">
+            <td id="1-8-0">
+                <label id="1-8-0-0" type="label" class="box">% с оборота</label>
+            </td>
+            <td id="1-8-1">
+                <textarea id="1-8-1-0" type="textarea" class="box"></textarea>
+            </td>
+        </tr>
+        <tr id="1-9">
+            <td id="1-9-0">
+                <label id="1-9-0-0" type="label" class="box">НДС Арендатора</label>
+            </td>
+            <td id="1-9-1">
+                <select id="1-9-1-0" type="select" class="box">
+                    <option value=20>20%</option>
+                    <option value=12>12%</option>
+                    <option value=0>0%</option>
+                </select>
+            </td>
+        </tr>
+        <tr id="1-10">
+            <td id="1-10-0">
+                <label id="1-10-0-0" type="label" class="box">Индексация на 2 -й год</label>
+            </td>
+            <td id="1-10-1">
+                <textarea id="1-10-1-0" type="textarea" class="box"></textarea>
+            </td>
+        </tr>
+        <tr id="1-11">
+            <td id="1-11-0">
+                <label id="1-11-0-0" type="label" class="box">Депозит, руб без НДС к-во месяцев</label>
+            </td>
+            <td id="1-11-1">
+                <textarea id="1-11-1-0" type="textarea" class="box"></textarea>
+            </td>
+        </tr>
+        <tr id="1-12">
+            <td id="1-12-0">
+                <label id="1-12-0-0" type="label" class="box">Авансовый платеж, руб к-во месяцев</label>
+            </td>
+            <td id="1-12-1">
+                <textarea id="1-12-1-0" type="textarea" class="box"></textarea>
+            </td>
+        </tr>
+        <tr id="1-13">
+            <td id="1-13-0">
+                <label id="1-13-0-0" type="label" class="box">Коммунальные услуги в мес</label>
+            </td>
+            <td id="1-13-1">
+                <textarea id="1-13-1-0" type="textarea" class="box"></textarea>
+            </td>
+        </tr>
+        <tr id="1-14">
+            <td id="1-14-0">
+                <label id="1-14-0-0" type="label" class="box">Коэффециент роста курса</label>
+            </td>
+            <td id="1-14-1">
+                <textarea id="1-14-1-0" type="textarea" class="box"></textarea>
+            </td>
+        </tr>
+        <tr id="1-15">
+            <td id="1-15-0">
+                <label id="1-15-0-0" type="label" class="box">Тип расчета оплаты аренды</label>
+            </td>
+            <td id="1-15-1">
+                <select id="1-15-1-0" type="select" class="box">
+                    <option value="Сравнение со всеми ставками">Сравнение со всеми ставками</option>
+                    <option value="Сравнение с базовой ставкой">Сравнение с базовой ставкой</option>
+                </select>
+            </td>
+        </tr>
+    </table>
+    <br>
+
+    <!--2 table-->
+    <table id="2">
+        <th id="2-0" colspan="4">
+            <label id="2-0-0" type="label">Корректировки инвестиций</label>
+        </th>
+        <tr id="2-1">
+            <th id="2-1-0">
+                <label id="2-1-0-0" type="label" class="box">Тип инвестиции</label>
+            </th>
+            <th id="2-1-1">
+                <label id="2-1-1-0" type="label" class="box">Сумма, руб</label>
+            </th>
+            <th id="2-1-2">
+                <label id="2-1-2-0" type="label" class="box">Корректировки, руб</label>
+            </th>
+            <th id="2-1-3">
+                <label id="2-1-3-0" type="label" class="box">Инвестиции для проекта, руб</label>
+            </th>
+        </tr>
+        <tr id="2-2">
+            <td id="2-2-0">
+                <label id="2-2-0-0" type="label" class="box">Проект</label>
+            </td>
+            <td id="2-2-1">
+                <label id="2-2-1-0" type="label" class="box"></label>
+            </td>
+            <td id="2-2-2">
+                <textarea id="2-2-2-0" type="textarea" class="box"></textarea>
+            </td>
+            <td id="2-2-3">
+                <label id="2-2-3-0" type="label" class="box"></label>
+            </td>
+        </tr>
+        <tr id="2-3">
+            <td id="2-3-0">
+                <label id="2-3-0-0" type="label" class="box">Материалы для Ремонта</label>
+            </td>
+            <td id="2-3-1">
+                <label id="2-3-1-0" type="label" class="box"></label>
+            </td>
+            <td id="2-3-2">
+                <textarea id="2-3-2-0" type="textarea" class="box"></textarea>
+            </td>
+            <td id="2-3-3">
+                <label id="2-3-3-0" type="label" class="box"></label>
+            </td>
+        </tr>
+        <tr id="2-4">
+            <td id="2-4-0">
+                <label id="2-4-0-0" type="label" class="box">Подрядные работы</label>
+            </td>
+            <td id="2-4-1">
+                <label id="2-4-1-0" type="label" class="box"></label>
+            </td>
+            <td id="2-4-2">
+                <textarea id="2-4-2-0" type="textarea" class="box"></textarea>
+            </td>
+            <td id="2-4-3">
+                <label id="2-4-3-0" type="label" class="box"></label>
+            </td>
+        </tr>
+        <tr id="2-5">
+            <td id="2-5-0">
+                <label id="2-5-0-0" type="label" class="box">Страховки</label>
+            </td>
+            <td id="2-5-1">
+                <label id="2-5-1-0" type="label" class="box"></label>
+            </td>
+            <td id="2-5-2">
+                <textarea id="2-5-2-0" type="textarea" class="box"></textarea>
+            </td>
+            <td id="2-5-3">
+                <label id="2-5-3-0" type="label" class="box"></label>
+            </td>
+        </tr>
+        <tr id="2-6">
+            <td id="2-6-0">
+                <label id="2-6-0-0" type="label" class="box">Торговое оборудование включая вывеску</label>
+            </td>
+            <td id="2-6-1">
+                <label id="2-6-1-0" type="label" class="box"></label>
+            </td>
+            <td id="2-6-2">
+                <textarea id="2-6-2-0" type="textarea" class="box"></textarea>
+            </td>
+            <td id="2-6-3">
+                <label id="2-6-3-0" type="label" class="box"></label>
+            </td>
+        </tr>
+        <tr id="2-7">
+            <td id="2-7-0">
+                <label id="2-7-0-0" type="label" class="box">ККМ, ИТ оборудование, видеонаблюдение</label>
+            </td>
+            <td id="2-7-1">
+                <label id="2-7-1-0" type="label" class="box"></label>
+            </td>
+            <td id="2-7-2">
+                <textarea id="2-7-2-0" type="textarea" class="box"></textarea>
+            </td>
+            <td id="2-7-3">
+                <label id="2-7-3-0" type="label" class="box"></label>
+            </td>
+        </tr>
+        <tr id="2-8">
+            <td id="2-8-0">
+                <label id="2-8-0-0" type="label" class="box">Пожарная сигнализация (охранная и пожарная)</label>
+            </td>
+            <td id="2-8-1">
+                <label id="2-8-1-0" type="label" class="box"></label>
+            </td>
+            <td id="2-8-2">
+                <textarea id="2-8-2-0" type="textarea" class="box"></textarea>
+            </td>
+            <td id="2-8-3">
+                <label id="2-8-3-0" type="label" class="box"></label>
+            </td>
+        </tr>
+        <tr id="2-9">
+            <td id="2-9-0">
+                <label id="2-9-0-0" type="label" class="box">Прочие услуги</label>
+            </td>
+            <td id="2-9-1">
+                <label id="2-9-1-0" type="label" class="box"></label>
+            </td>
+            <td id="2-9-2">
+                <textarea id="2-9-2-0" type="textarea" class="box"></textarea>
+            </td>
+            <td id="2-9-3">
+                <label id="2-9-3-0" type="label" class="box"></label>
+            </td>
+        </tr>
+        <tr id="2-10">
+            <td id="2-10-0">
+                <label id="2-10-0-0" type="label" class="box">Подбор Персонала</label>
+            </td>
+            <td id="2-10-1">
+                <label id="2-10-1-0" type="label" class="box"></label>
+            </td>
+            <td id="2-10-2">
+                <textarea id="2-10-2-0" type="textarea" class="box"></textarea>
+            </td>
+            <td id="2-10-3">
+                <label id="2-10-3-0" type="label" class="box"></label>
+            </td>
+        </tr>
+        <tr id="2-11">
+            <td id="2-11-0">
+                <label id="2-11-0-0" type="label" class="box">Логистика</label>
+            </td>
+            <td id="2-11-1">
+                <label id="2-11-1-0" type="label" class="box"></label>
+            </td>
+            <td id="2-11-2">
+                <textarea id="2-11-2-0" type="textarea" class="box"></textarea>
+            </td>
+            <td id="2-11-3">
+                <label id="2-11-3-0" type="label" class="box"></label>
+            </td>
+        </tr>
+        <tr id="2-12">
+            <td id="2-12-0">
+                <label id="2-12-0-0" type="label" class="box">Общие материалы</label>
+            </td>
+            <td id="2-12-1">
+                <label id="2-12-1-0" type="label" class="box"></label>
+            </td>
+            <td id="2-12-2">
+                <textarea id="2-12-2-0" type="textarea" class="box"></textarea>
+            </td>
+            <td id="2-12-3">
+                <label id="2-12-3-0" type="label" class="box"></label>
+            </td>
+        </tr>
+        <tr id="2-13">
+            <td id="2-13-0">
+                <label id="2-13-0-0" type="label" class="box">Прочее</label>
+            </td>
+            <td id="2-13-1">
+                <label id="2-13-1-0" type="label" class="box">0</label>
+            </td>
+            <td id="2-13-2">
+                <textarea id="2-13-2-0" type="textarea" class="box"></textarea>
+            </td>
+            <td id="2-13-3">
+                <label id="2-13-3-0" type="label" class="box"></label>
+            </td>
+        </tr>
+        <tr id="2-14">
+            <td id="2-14-0">
+                <label id="2-14-0-0" type="label" class="box">Итого</label>
+            </td>
+            <td id="2-14-1">
+                <label id="2-14-1-0" type="label" class="box"></label>
+            </td>
+            <td id="2-14-2">
+                <label id="2-14-2-0" type="label" class="box"></label>
+            </td>
+            <td id="2-14-3">
+                <label id="2-14-3-0" type="label" class="box"></label>
+            </td>
+        </tr>
+        <tr id="2-15">
+            <td id="2-15-0">
+                <label id="2-15-0-0" type="label" class="box">Стоимость метра</label>
+            </td>
+            <td id="2-15-1" colspan="3">
+                <label id="2-15-1-0" type="label" class="box"></label>
+            </td>
+        </tr>
+    </table>
+    <br>
+
+    <!--3 table-->
+    <table id="3">
+        <th id="3-0" colspan="3">
+            <label id="3-0-0" type="label">Расчет расходов на команду, АХР и логистику</label>
+        </th>
+        <tr id="3-1">
+            <th id="3-1-0">
+                <label id="3-1-0-0" type="label" class="box">Пункт</label>
+            </th>
+            <th id="3-1-1">
+                <label id="3-1-1-0" type="label" class="box">Показатель</label>
+            </th>
+            <th id="3-1-2">
+                <label id="3-1-2-0" type="label" class="box">Количество</label>
+            </th>
+        </tr>
+        <tr id="3-2">
+            <td id="3-2-0">
+                <label id="3-2-0-0" type="label" class="box">Продавец, ЗП на руки</label>
+            </td>
+            <td id="3-2-1">
+                <textarea id="3-2-1-0" type="textarea" class="box"></textarea>
+            </td>
+            <td id="3-2-2">
+                <textarea id="3-2-2-0" type="textarea" class="box"></textarea>
+            </td>
+        </tr>
+        <tr id="3-3">
+            <td id="3-3-0">
+                <label id="3-3-0-0" type="label" class="box">Зам управляющего магазином, ЗП на руки</label>
+            </td>
+            <td id="3-3-1">
+                <textarea id="3-3-1-0" type="textarea" class="box"></textarea>
+            </td>
+            <td id="3-3-2">
+                <textarea id="3-3-2-0" type="textarea" class="box"></textarea>
+            </td>
+        </tr>
+        <tr id="3-4">
+            <td id="3-4-0">
+                <label id="3-4-0-0" type="label" class="box">Управляющий магазином, ЗП на руки</label>
+            </td>
+            <td id="3-4-1">
+                <textarea id="3-4-1-0" type="textarea" class="box"></textarea>
+            </td>
+            <td id="3-4-2">
+                <textarea id="3-4-2-0" type="textarea" class="box"></textarea>
+            </td>
+        </tr>
+        <tr id="3-5">
+            <td id="3-5-0">
+                <label id="3-5-0-0" type="label" class="box">Роялти, %</label>
+            </td>
+            <td id="3-5-1">
+                <textarea id="3-5-1-0" type="textarea" class="box"></textarea>
+            </td>
+        </tr>
+        <tr id="3-6">
+            <td id="3-6-0">
+                <label id="3-6-0-0" type="label" class="box">Паушальный взнос, руб</label>
+            </td>
+            <td id="3-6-1">
+                <textarea id="3-6-1-0" type="textarea" class="box"></textarea>
+            </td>
+        </tr>
+        <tr id="3-7">
+            <td id="3-7-0">
+                <label id="3-7-0-0" type="label" class="box">Адм расходы в месяц, руб</label>
+            </td>
+            <td id="3-7-1">
+                <textarea id="3-7-1-0" type="textarea" class="box"></textarea>
+            </td>
+        </tr>
+        <tr id="3-8">
+            <td id="3-8-0">
+                <label id="3-8-0-0" type="label" class="box">Логистика, руб</label>
+            </td>
+            <td id="3-8-1">
+                <textarea id="3-8-1-0" type="textarea" class="box"></textarea>
+            </td>
+        </tr>
+        <tr id="3-9">
+            <td id="3-9-0">
+                <label id="3-9-0-0" type="label" class="box">Индексация ЗП и АХР и логистики на 2-й год, %</label>
+            </td>
+            <td id="3-9-1">
+                <textarea id="3-9-1-0" type="textarea" class="box"></textarea>
+            </td>
+        </tr>
+        <tr id="3-10">
+            <td id="3-10-0">
+                <label id="3-10-0-0" type="label" class="box">Ставка эквайринга, %</label>
+            </td>
+            <td id="3-10-1">
+                <textarea id="3-10-1-0" type="textarea" class="box"></textarea>
+            </td>
+        </tr>
+        <tr id="3-11">
+            <td id="3-11-0">
+                <label id="3-11-0-0" type="label" class="box">Доля эквайринга, %</label>
+            </td>
+            <td id="3-11-1">
+                <textarea id="3-11-1-0" type="textarea" class="box"></textarea>
+            </td>
+        </tr>
+        <tr id="3-12">
+            <td id="3-12-0">
+                <label id="3-12-0-0" type="label" class="box">Себестоимость товара</label>
+            </td>
+            <td id="3-12-1">
+                <textarea id="3-12-1-0" type="textarea" class="box"></textarea>
+            </td>
+        </tr>
+        <tr id="3-13">
+            <td id="3-13-0">
+                <label id="3-13-0-0" type="label" class="box">Налоги ФОТ</label>
+            </td>
+            <td id="3-13-1">
+                <textarea id="3-13-1-0" type="textarea" class="box"></textarea>
+            </td>
+        </tr>
+    </table>
+    <br>
+
+    <!--4 table-->
+    <table id="4">
+        <th id="4-0" colspan="6">
+            <label id="4-0-0" type="label">Прогноз роста и сценарии</label>
+        </th>
+        <tr id="4-1">
+            <th id="4-1-0" rowspan="2">
+                <label id="4-1-0-0" type="label" class="box">Вариант</label>
+            </th>
+            <th id="4-1-1" rowspan="2">
+                <label id="4-1-1-0" type="label" class="box">Общий коэффициент</label>
+            </th>
+            <th id="4-1-2" colspan="4">
+                <label id="4-1-2-0" type="label" class="box">Прирост к предыдущему году, %</label>
+            </th>
+        </tr>
+        <tr id="4-2">
+            <td id="4-2-0">
+                <label id="4-2-0-0" type="label" class="box">2-й год</label>
+            </td>
+            <td id="4-2-1">
+                <label id="4-2-1-0" type="label" class="box">3-й год</label>
+            </td>
+            <td id="4-2-2">
+                <label id="4-2-2-0" type="label" class="box">4-й год</label>
+            </td>
+            <td id="4-2-3">
+                <label id="4-2-3-0" type="label" class="box">5-й год</label>
+            </td>
+        </tr>
+        <tr id="4-3">
+            <td id="4-3-0">
+                <label id="4-3-0-0" type="label" class="box">Реалистичный</label>
+            </td>
+            <td id="4-3-1">
+                <textarea id="4-3-1-0" type="textarea" class="box"></textarea>
+            </td>
+            <td id="4-3-2">
+                <textarea id="4-3-2-0" type="textarea" class="box"></textarea>
+            </td>
+            <td id="4-3-3">
+                <textarea id="4-3-3-0" type="textarea" class="box"></textarea>
+            </td>
+            <td id="4-3-4">
+                <textarea id="4-3-4-0" type="textarea" class="box"></textarea>
+            </td>
+            <td id="4-3-5">
+                <textarea id="4-3-5-0" type="textarea" class="box"></textarea>
+            </td>
+        </tr>
+        <tr id="4-4">
+            <td id="4-4-0">
+                <label id="4-4-0-0" type="label" class="box">Оптимистичный</label>
+            </td>
+            <td id="4-4-1">
+                <textarea id="4-4-1-0" type="textarea" class="box"></textarea>
+            </td>
+        </tr>
+        <tr id="4-5">
+            <td id="4-5-0">
+                <label id="4-5-0-0" type="label" class="box">Пессимистичный</label>
+            </td>
+            <td id="4-5-1">
+                <textarea id="4-5-1-0" type="textarea" class="box"></textarea>
+            </td>
+        </tr>
+    </table>
+    <br>
+
+    <!--5 table-->
+    <table id="5">
+        <th id="5-0" colspan="4">
+            <label id="5-0-0" type="label">Доходная часть</label>
+        </th>
+        <tr id="5-1">
+            <th id="5-1-0">
+                <label id="5-1-0-0" type="label" class="box">Тип</label>
+            </th>
+            <th id="5-1-1">
+                <label id="5-1-1-0" type="label" class="box">План конверсия</label>
+            </th>
+            <th id="5-1-2">
+                <label id="5-1-2-0" type="label" class="box">План UPT</label>
+            </th>
+            <th id="5-1-3">
+                <label id="5-1-3-0" type="label" class="box">План стоимость единицы</label>
+            </th>
+        </tr>
+        <tr id="5-2">
+            <td id="5-2-0">
+                <label id="5-2-0-0" type="label" class="box">Январь</label>
+            </td>
+            <td id="5-2-1">
+                <textarea id="5-2-1-0" type="textarea" class="box"></textarea>
+            </td>
+            <td id="5-2-2">
+                <textarea id="5-2-2-0" type="textarea" class="box"></textarea>
+            </td>
+            <td id="5-2-3">
+                <textarea id="5-2-3-0" type="textarea" class="box"></textarea>
+            </td>
+        </tr>
+        <tr id="5-3">
+            <td id="5-3-0">
+                <label id="5-3-0-0" type="label" class="box">Февраль</label>
+            </td>
+            <td id="5-3-1">
+                <textarea id="5-3-1-0" type="textarea" class="box"></textarea>
+            </td>
+            <td id="5-3-2">
+                <textarea id="5-3-2-0" type="textarea" class="box"></textarea>
+            </td>
+            <td id="5-3-3">
+                <textarea id="5-3-3-0" type="textarea" class="box"></textarea>
+            </td>
+        </tr>
+        <tr id="5-4">
+            <td id="5-4-0">
+                <label id="5-4-0-0" type="label" class="box">Март</label>
+            </td>
+            <td id="5-4-1">
+                <textarea id="5-4-1-0" type="textarea" class="box"></textarea>
+            </td>
+            <td id="5-4-2">
+                <textarea id="5-4-2-0" type="textarea" class="box"></textarea>
+            </td>
+            <td id="5-4-3">
+                <textarea id="5-4-3-0" type="textarea" class="box"></textarea>
+            </td>
+        </tr>
+        <tr id="5-5">
+            <td id="5-5-0">
+                <label id="5-5-0-0" type="label" class="box">Апрель</label>
+            </td>
+            <td id="5-5-1">
+                <textarea id="5-5-1-0" type="textarea" class="box"></textarea>
+            </td>
+            <td id="5-5-2">
+                <textarea id="5-5-2-0" type="textarea" class="box"></textarea>
+            </td>
+            <td id="5-5-3">
+                <textarea id="5-5-3-0" type="textarea" class="box"></textarea>
+            </td>
+        </tr>
+        <tr id="5-6">
+            <td id="5-6-0">
+                <label id="5-6-0-0" type="label" class="box">Май</label>
+            </td>
+            <td id="5-6-1">
+                <textarea id="5-6-1-0" type="textarea" class="box"></textarea>
+            </td>
+            <td id="5-6-2">
+                <textarea id="5-6-2-0" type="textarea" class="box"></textarea>
+            </td>
+            <td id="5-6-3">
+                <textarea id="5-6-3-0" type="textarea" class="box"></textarea>
+            </td>
+        </tr>
+        <tr id="5-7">
+            <td id="5-7-0">
+                <label id="5-7-0-0" type="label" class="box">Июнь</label>
+            </td>
+            <td id="5-7-1">
+                <textarea id="5-7-1-0" type="textarea" class="box"></textarea>
+            </td>
+            <td id="5-7-2">
+                <textarea id="5-7-2-0" type="textarea" class="box"></textarea>
+            </td>
+            <td id="5-7-3">
+                <textarea id="5-7-3-0" type="textarea" class="box"></textarea>
+            </td>
+        </tr>
+        <tr id="5-8">
+            <td id="5-8-0">
+                <label id="5-8-0-0" type="label" class="box">Июль</label>
+            </td>
+            <td id="5-8-1">
+                <textarea id="5-8-1-0" type="textarea" class="box"></textarea>
+            </td>
+            <td id="5-8-2">
+                <textarea id="5-8-2-0" type="textarea" class="box"></textarea>
+            </td>
+            <td id="5-8-3">
+                <textarea id="5-8-3-0" type="textarea" class="box"></textarea>
+            </td>
+        </tr>
+        <tr id="5-9">
+            <td id="5-9-0">
+                <label id="5-9-0-0" type="label" class="box">Август</label>
+            </td>
+            <td id="5-9-1">
+                <textarea id="5-9-1-0" type="textarea" class="box"></textarea>
+            </td>
+            <td id="5-9-2">
+                <textarea id="5-9-2-0" type="textarea" class="box"></textarea>
+            </td>
+            <td id="5-9-3">
+                <textarea id="5-9-3-0" type="textarea" class="box"></textarea>
+            </td>
+        </tr>
+        <tr id="5-10">
+            <td id="5-10-0">
+                <label id="5-10-0-0" type="label" class="box">Сентябрь</label>
+            </td>
+            <td id="5-10-1">
+                <textarea id="5-10-1-0" type="textarea" class="box"></textarea>
+            </td>
+            <td id="5-10-2">
+                <textarea id="5-10-2-0" type="textarea" class="box"></textarea>
+            </td>
+            <td id="5-10-3">
+                <textarea id="5-10-3-0" type="textarea" class="box"></textarea>
+            </td>
+        </tr>
+        <tr id="5-11">
+            <td id="5-11-0">
+                <label id="5-11-0-0" type="label" class="box">Октябрь</label>
+            </td>
+            <td id="5-11-1">
+                <textarea id="5-11-1-0" type="textarea" class="box"></textarea>
+            </td>
+            <td id="5-11-2">
+                <textarea id="5-11-2-0" type="textarea" class="box"></textarea>
+            </td>
+            <td id="5-11-3">
+                <textarea id="5-11-3-0" type="textarea" class="box"></textarea>
+            </td>
+        </tr>
+        <tr id="5-12">
+            <td id="5-12-0">
+                <label id="5-12-0-0" type="label" class="box">Ноябрь</label>
+            </td>
+            <td id="5-12-1">
+                <textarea id="5-12-1-0" type="textarea" class="box"></textarea>
+            </td>
+            <td id="5-12-2">
+                <textarea id="5-12-2-0" type="textarea" class="box"></textarea>
+            </td>
+            <td id="5-12-3">
+                <textarea id="5-12-3-0" type="textarea" class="box"></textarea>
+            </td>
+        </tr>
+        <tr id="5-13">
+            <td id="5-13-0">
+                <label id="5-13-0-0" type="label" class="box">Декабрь</label>
+            </td>
+            <td id="5-13-1">
+                <textarea id="5-13-1-0" type="textarea" class="box"></textarea>
+            </td>
+            <td id="5-13-2">
+                <textarea id="5-13-2-0" type="textarea" class="box"></textarea>
+            </td>
+            <td id="5-13-3">
+                <textarea id="5-13-3-0" type="textarea" class="box"></textarea>
+            </td>
+        </tr>
+    </table>
+    <br>
+
+    <!--button-->
+    <button onclick="f()" type="button">Посчитать</button>
+    <br>
+    <br>
+
+    <!--6 table-->
+    <table id="6">
+        <th id="6-0" colspan="4">
+            <label id="6-0-0" type="label">Показатели эффективности проекта</label>
+        </th>
+        <tr id="6-1">
+            <th id="6-1-0">
+                <label id="6-1-0-0" type="label" class="box"></label>
+            </th>
+            <th id="6-1-1">
+                <label id="6-1-1-0" type="label" class="box">Реалистичный</label>
+            </th>
+            <th id="6-1-2">
+                <label id="6-1-2-0" type="label" class="box">Оптимистичный</label>
+            </th>
+            <th id="6-1-3">
+                <label id="6-1-3-0" type="label" class="box">Пессимистичный</label>
+            </th>
+        </tr>
+        <tr id="6-2">
+            <td id="6-2-0">
+                <label id="6-2-0-0" type="label" class="box">Маржинальность, %</label>
+            </td>
+            <td id="6-2-1">
+                <label id="6-2-1-0" type="label" class="box"></label>
+            </td>
+            <td id="6-2-2">
+                <label id="6-2-2-0" type="label" class="box"></label>
+            </td>
+            <td id="6-2-3">
+                <label id="6-2-3-0" type="label" class="box"></label>
+            </td>
+        </tr>
+        <tr id="6-3">
+            <td id="6-3-0">
+                <label id="6-3-0-0" type="label" class="box">Доля аренды в выручке, %</label>
+            </td>
+            <td id="6-3-1">
+                <label id="6-3-1-0" type="label" class="box"></label>
+            </td>
+            <td id="6-3-2">
+                <label id="6-3-2-0" type="label" class="box"></label>
+            </td>
+            <td id="6-3-3">
+                <label id="6-3-3-0" type="label" class="box"></label>
+            </td>
+        </tr>
+        <tr id="6-4">
+            <td id="6-4-0">
+                <label id="6-4-0-0" type="label" class="box">Чистый Денежный поток, руб</label>
+            </td>
+            <td id="6-4-1">
+                <label id="6-4-1-0" type="label" class="box"></label>
+            </td>
+            <td id="6-4-2">
+                <label id="6-4-2-0" type="label" class="box"></label>
+            </td>
+            <td id="6-4-3">
+                <label id="6-4-3-0" type="label" class="box"></label>
+            </td>
+        </tr>
+        <tr id="6-5">
+            <td id="6-5-0">
+                <label id="6-5-0-0" type="label" class="box">Доля ФОТ от выручки, %</label>
+            </td>
+            <td id="6-5-1">
+                <label id="6-5-1-0" type="label" class="box"></label>
+            </td>
+            <td id="6-5-2">
+                <label id="6-5-2-0" type="label" class="box"></label>
+            </td>
+            <td id="6-5-3">
+                <label id="6-5-3-0" type="label" class="box"></label>
+            </td>
+        </tr>
+        <tr id="6-6">
+            <td id="6-6-0">
+                <label id="6-6-0-0" type="label" class="box">Чистый денежный поток дисконтированный, руб</label>
+            </td>
+            <td id="6-6-1">
+                <label id="6-6-1-0" type="label" class="box"></label>
+            </td>
+            <td id="6-6-2">
+                <label id="6-6-2-0" type="label" class="box"></label>
+            </td>
+            <td id="6-6-3">
+                <label id="6-6-3-0" type="label" class="box"></label>
+            </td>
+        </tr>
+        <tr id="6-7">
+            <td id="6-7-0">
+                <label id="6-7-0-0" type="label" class="box">Срок окупаемости, мес.</label>
+            </td>
+            <td id="6-7-1">
+                <label id="6-7-1-0" type="label" class="box"></label>
+            </td>
+            <td id="6-7-2">
+                <label id="6-7-2-0" type="label" class="box"></label>
+            </td>
+            <td id="6-7-3">
+                <label id="6-7-3-0" type="label" class="box"></label>
+            </td>
+        </tr>
+        <tr id="6-8">
+            <td id="6-8-0">
+                <label id="6-8-0-0" type="label" class="box">ROI, %</label>
+            </td>
+            <td id="6-8-1">
+                <label id="6-8-1-0" type="label" class="box"></label>
+            </td>
+            <td id="6-8-2">
+                <label id="6-8-2-0" type="label" class="box"></label>
+            </td>
+            <td id="6-8-3">
+                <label id="6-8-3-0" type="label" class="box"></label>
+            </td>
+        </tr>
+        <tr id="6-9">
+            <td id="6-9-0">
+                <label id="6-9-0-0" type="label" class="box">Аренда в месяц с НДС без учета % с оборота в 1-й год</label>
+            </td>
+            <td id="6-9-1">
+                <label id="6-9-1-0" type="label" class="box"></label>
+            </td>
+            <td id="6-9-2">
+                <label id="6-9-2-0" type="label" class="box"></label>
+            </td>
+            <td id="6-9-3">
+                <label id="6-9-3-0" type="label" class="box"></label>
+            </td>
+        </tr>
+        <tr id="6-10">
+            <td id="6-10-0">
+                <label id="6-10-0-0" type="label" class="box">Средняя аренда в месяц с НДС с % от оборота за 1-й год</label>
+            </td>
+            <td id="6-10-1">
+                <label id="6-10-1-0" type="label" class="box"></label>
+            </td>
+            <td id="6-10-2">
+                <label id="6-10-2-0" type="label" class="box"></label>
+            </td>
+            <td id="6-10-3">
+                <label id="6-10-3-0" type="label" class="box"></label>
+            </td>
+        </tr>
+        <tr id="6-11">
+            <td id="6-11-0">
+                <label id="6-11-0-0" type="label" class="box">Чистая прибыль в месяц, руб</label>
+            </td>
+            <td id="6-11-1">
+                <label id="6-11-1-0" type="label" class="box"></label>
+            </td>
+            <td id="6-11-2">
+                <label id="6-11-2-0" type="label" class="box"></label>
+            </td>
+            <td id="6-11-3">
+                <label id="6-11-3-0" type="label" class="box"></label>
+            </td>
+        </tr>
+    </table>
+
+</body>
+</html>

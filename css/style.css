@@ -1,0 +1,27 @@
+* {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+    margin: 48px;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+th {
+    font-size: 48px;
+    text-align: left;
+}
+
+.box, button {
+    height: 50px;
+    width: 300px;
+    font-size: 20px;
+}
+
+[id='6'] {
+    display: none;
+}
