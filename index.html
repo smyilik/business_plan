@@ -24,8 +24,9 @@
     <script src="js/script.js"></script>
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body onload="onStart()">
     
+    <button onclick="test()" type="button">ТЕСТ</button>
     
     <!--0 table-->
     <table id="0">
@@ -76,7 +77,7 @@
                 <label id="1-2-0-0" type="label" class="box">Площадь</label>
             </td>
             <td id="1-2-1">
-                <textarea id="1-2-1-0" type = "textarea" class="box"></textarea>
+                <textarea id="1-2-1-0" onchange="onSpaceChange()" class="box">53.7</textarea>
             </td>
         </tr>
         <tr id="1-3">
@@ -108,7 +109,7 @@
                 <label id="1-5-0-0" type="label" class="box">Фикс плата, без НДС</label>
             </td>
             <td id="1-5-1">
-                <textarea id="1-5-1-0" type="textarea" class="box"></textarea>
+                <textarea id="1-5-1-0" type="textarea" class="box">200000</textarea>
             </td>
             <td id="1-5-2">
                 <select id="1-5-2-0" type = "select" class="box">
@@ -119,7 +120,7 @@
                 </select>
             </td>
             <td id="1-5-3">
-                <textarea id="1-5-3-0" type="textarea" class="box"></textarea>
+                <textarea id="1-5-3-0" type="textarea" class="box">1</textarea>
             </td>
         </tr>
         <tr id="1-6">
@@ -127,7 +128,7 @@
                 <label id="1-6-0-0" type="label" class="box">Эксплуатац. Ставка без НДС</label>
             </td>
             <td id="1-6-1">
-                <textarea id="1-6-1-0" type="textarea" class="box"></textarea>
+                <textarea id="1-6-1-0" type="textarea" class="box">21600</textarea>
             </td>
             <td id="1-6-2">
                 <select id="1-6-2-0" type="select" class = "box">
@@ -138,7 +139,7 @@
                 </select>
             </td>
             <td id="1-6-3">
-                <textarea id="1-6-3-0" type="textarea" class="box"></textarea>
+                <textarea id="1-6-3-0" type="textarea" class="box">1</textarea>
             </td>
         </tr>
         <tr id="1-7">
@@ -146,7 +147,7 @@
                 <label id="1-7-0-0" type="label" class="box">Маркетинг ставка без НДС</label>
             </td>
             <td id="1-7-1">
-                <textarea id="1-7-1-0" type="textarea" class="box"></textarea>
+                <textarea id="1-7-1-0" type="textarea" class="box">3000</textarea>
             </td>
             <td id="1-7-2">
                 <select id="1-7-2-0" type="select" class="box">
@@ -157,7 +158,7 @@
                 </select>
             </td>
             <td id="1-7-3">
-                <textarea id="1-7-3-0" type="textarea" class="box"></textarea>
+                <textarea id="1-7-3-0" type="textarea" class="box">1</textarea>
             </td>
         </tr>
         <tr id="1-8">
@@ -165,7 +166,7 @@
                 <label id="1-8-0-0" type="label" class="box">% с оборота</label>
             </td>
             <td id="1-8-1">
-                <textarea id="1-8-1-0" type="textarea" class="box"></textarea>
+                <textarea id="1-8-1-0" type="textarea" class="box">17</textarea>
             </td>
         </tr>
         <tr id="1-9">
@@ -185,23 +186,23 @@
                 <label id="1-10-0-0" type="label" class="box">Индексация на 2 -й год</label>
             </td>
             <td id="1-10-1">
-                <textarea id="1-10-1-0" type="textarea" class="box"></textarea>
+                <textarea id="1-10-1-0" type="textarea" class="box">7</textarea>
             </td>
         </tr>
         <tr id="1-11">
             <td id="1-11-0">
-                <label id="1-11-0-0" type="label" class="box">Депозит, руб без НДС к-во месяцев</label>
+                <label id="1-11-0-0" type="label" class="box">Депозит, руб без НДС, к-во месяцев</label>
             </td>
             <td id="1-11-1">
-                <textarea id="1-11-1-0" type="textarea" class="box"></textarea>
+                <textarea id="1-11-1-0" type="textarea" class="box">3</textarea>
             </td>
         </tr>
         <tr id="1-12">
             <td id="1-12-0">
-                <label id="1-12-0-0" type="label" class="box">Авансовый платеж, руб к-во месяцев</label>
+                <label id="1-12-0-0" type="label" class="box">Авансовый платеж, руб, к-во месяцев</label>
             </td>
             <td id="1-12-1">
-                <textarea id="1-12-1-0" type="textarea" class="box"></textarea>
+                <textarea id="1-12-1-0" type="textarea" class="box">1</textarea>
             </td>
         </tr>
         <tr id="1-13">
@@ -209,7 +210,7 @@
                 <label id="1-13-0-0" type="label" class="box">Коммунальные услуги в мес</label>
             </td>
             <td id="1-13-1">
-                <textarea id="1-13-1-0" type="textarea" class="box"></textarea>
+                <textarea id="1-13-1-0" type="textarea" class="box">10000</textarea>
             </td>
         </tr>
         <tr id="1-14">
@@ -217,7 +218,7 @@
                 <label id="1-14-0-0" type="label" class="box">Коэффециент роста курса</label>
             </td>
             <td id="1-14-1">
-                <textarea id="1-14-1-0" type="textarea" class="box"></textarea>
+                <textarea id="1-14-1-0" type="textarea" class="box">1</textarea>
             </td>
         </tr>
         <tr id="1-15">
@@ -258,10 +259,10 @@
                 <label id="2-2-0-0" type="label" class="box">Проект</label>
             </td>
             <td id="2-2-1">
-                <label id="2-2-1-0" type="label" class="box"></label>
+                <label id="2-2-1-0" type="label" class="box">166667</label>
             </td>
             <td id="2-2-2">
-                <textarea id="2-2-2-0" type="textarea" class="box"></textarea>
+                <textarea id="2-2-2-0" type="textarea" class="box">-1141667</textarea>
             </td>
             <td id="2-2-3">
                 <label id="2-2-3-0" type="label" class="box"></label>
@@ -272,10 +273,10 @@
                 <label id="2-3-0-0" type="label" class="box">Материалы для Ремонта</label>
             </td>
             <td id="2-3-1">
-                <label id="2-3-1-0" type="label" class="box"></label>
+                <label id="2-3-1-0" type="label" class="box">1416667</label>
             </td>
             <td id="2-3-2">
-                <textarea id="2-3-2-0" type="textarea" class="box"></textarea>
+                <textarea id="2-3-2-0" type="textarea" class="box">0</textarea>
             </td>
             <td id="2-3-3">
                 <label id="2-3-3-0" type="label" class="box"></label>
@@ -286,10 +287,10 @@
                 <label id="2-4-0-0" type="label" class="box">Подрядные работы</label>
             </td>
             <td id="2-4-1">
-                <label id="2-4-1-0" type="label" class="box"></label>
+                <label id="2-4-1-0" type="label" class="box">3750000</label>
             </td>
             <td id="2-4-2">
-                <textarea id="2-4-2-0" type="textarea" class="box"></textarea>
+                <textarea id="2-4-2-0" type="textarea" class="box">0</textarea>
             </td>
             <td id="2-4-3">
                 <label id="2-4-3-0" type="label" class="box"></label>
@@ -300,10 +301,10 @@
                 <label id="2-5-0-0" type="label" class="box">Страховки</label>
             </td>
             <td id="2-5-1">
-                <label id="2-5-1-0" type="label" class="box"></label>
+                <label id="2-5-1-0" type="label" class="box">100000</label>
             </td>
             <td id="2-5-2">
-                <textarea id="2-5-2-0" type="textarea" class="box"></textarea>
+                <textarea id="2-5-2-0" type="textarea" class="box">0</textarea>
             </td>
             <td id="2-5-3">
                 <label id="2-5-3-0" type="label" class="box"></label>
@@ -314,10 +315,10 @@
                 <label id="2-6-0-0" type="label" class="box">Торговое оборудование включая вывеску</label>
             </td>
             <td id="2-6-1">
-                <label id="2-6-1-0" type="label" class="box"></label>
+                <label id="2-6-1-0" type="label" class="box">2000000</label>
             </td>
             <td id="2-6-2">
-                <textarea id="2-6-2-0" type="textarea" class="box"></textarea>
+                <textarea id="2-6-2-0" type="textarea" class="box">0</textarea>
             </td>
             <td id="2-6-3">
                 <label id="2-6-3-0" type="label" class="box"></label>
@@ -328,10 +329,10 @@
                 <label id="2-7-0-0" type="label" class="box">ККМ, ИТ оборудование, видеонаблюдение</label>
             </td>
             <td id="2-7-1">
-                <label id="2-7-1-0" type="label" class="box"></label>
+                <label id="2-7-1-0" type="label" class="box">458333</label>
             </td>
             <td id="2-7-2">
-                <textarea id="2-7-2-0" type="textarea" class="box"></textarea>
+                <textarea id="2-7-2-0" type="textarea" class="box">0</textarea>
             </td>
             <td id="2-7-3">
                 <label id="2-7-3-0" type="label" class="box"></label>
@@ -342,10 +343,10 @@
                 <label id="2-8-0-0" type="label" class="box">Пожарная сигнализация (охранная и пожарная)</label>
             </td>
             <td id="2-8-1">
-                <label id="2-8-1-0" type="label" class="box"></label>
+                <label id="2-8-1-0" type="label" class="box">750000</label>
             </td>
             <td id="2-8-2">
-                <textarea id="2-8-2-0" type="textarea" class="box"></textarea>
+                <textarea id="2-8-2-0" type="textarea" class="box">0</textarea>
             </td>
             <td id="2-8-3">
                 <label id="2-8-3-0" type="label" class="box"></label>
@@ -356,10 +357,10 @@
                 <label id="2-9-0-0" type="label" class="box">Прочие услуги</label>
             </td>
             <td id="2-9-1">
-                <label id="2-9-1-0" type="label" class="box"></label>
+                <label id="2-9-1-0" type="label" class="box">41667</label>
             </td>
             <td id="2-9-2">
-                <textarea id="2-9-2-0" type="textarea" class="box"></textarea>
+                <textarea id="2-9-2-0" type="textarea" class="box">0</textarea>
             </td>
             <td id="2-9-3">
                 <label id="2-9-3-0" type="label" class="box"></label>
@@ -370,10 +371,10 @@
                 <label id="2-10-0-0" type="label" class="box">Подбор Персонала</label>
             </td>
             <td id="2-10-1">
-                <label id="2-10-1-0" type="label" class="box"></label>
+                <label id="2-10-1-0" type="label" class="box">100000</label>
             </td>
             <td id="2-10-2">
-                <textarea id="2-10-2-0" type="textarea" class="box"></textarea>
+                <textarea id="2-10-2-0" type="textarea" class="box">0</textarea>
             </td>
             <td id="2-10-3">
                 <label id="2-10-3-0" type="label" class="box"></label>
@@ -384,10 +385,10 @@
                 <label id="2-11-0-0" type="label" class="box">Логистика</label>
             </td>
             <td id="2-11-1">
-                <label id="2-11-1-0" type="label" class="box"></label>
+                <label id="2-11-1-0" type="label" class="box">41667</label>
             </td>
             <td id="2-11-2">
-                <textarea id="2-11-2-0" type="textarea" class="box"></textarea>
+                <textarea id="2-11-2-0" type="textarea" class="box">0</textarea>
             </td>
             <td id="2-11-3">
                 <label id="2-11-3-0" type="label" class="box"></label>
@@ -398,10 +399,10 @@
                 <label id="2-12-0-0" type="label" class="box">Общие материалы</label>
             </td>
             <td id="2-12-1">
-                <label id="2-12-1-0" type="label" class="box"></label>
+                <label id="2-12-1-0" type="label" class="box">416667</label>
             </td>
             <td id="2-12-2">
-                <textarea id="2-12-2-0" type="textarea" class="box"></textarea>
+                <textarea id="2-12-2-0" type="textarea" class="box">0</textarea>
             </td>
             <td id="2-12-3">
                 <label id="2-12-3-0" type="label" class="box"></label>
@@ -415,7 +416,7 @@
                 <label id="2-13-1-0" type="label" class="box">0</label>
             </td>
             <td id="2-13-2">
-                <textarea id="2-13-2-0" type="textarea" class="box"></textarea>
+                <textarea id="2-13-2-0" type="textarea" class="box">0</textarea>
             </td>
             <td id="2-13-3">
                 <label id="2-13-3-0" type="label" class="box"></label>
@@ -467,10 +468,10 @@
                 <label id="3-2-0-0" type="label" class="box">Продавец, ЗП на руки</label>
             </td>
             <td id="3-2-1">
-                <textarea id="3-2-1-0" type="textarea" class="box"></textarea>
+                <textarea id="3-2-1-0" type="textarea" class="box">75000</textarea>
             </td>
             <td id="3-2-2">
-                <textarea id="3-2-2-0" type="textarea" class="box"></textarea>
+                <textarea id="3-2-2-0" type="textarea" class="box">1</textarea>
             </td>
         </tr>
         <tr id="3-3">
@@ -478,10 +479,10 @@
                 <label id="3-3-0-0" type="label" class="box">Зам управляющего магазином, ЗП на руки</label>
             </td>
             <td id="3-3-1">
-                <textarea id="3-3-1-0" type="textarea" class="box"></textarea>
+                <textarea id="3-3-1-0" type="textarea" class="box">85000</textarea>
             </td>
             <td id="3-3-2">
-                <textarea id="3-3-2-0" type="textarea" class="box"></textarea>
+                <textarea id="3-3-2-0" type="textarea" class="box">1</textarea>
             </td>
         </tr>
         <tr id="3-4">
@@ -489,10 +490,10 @@
                 <label id="3-4-0-0" type="label" class="box">Управляющий магазином, ЗП на руки</label>
             </td>
             <td id="3-4-1">
-                <textarea id="3-4-1-0" type="textarea" class="box"></textarea>
+                <textarea id="3-4-1-0" type="textarea" class="box">100000</textarea>
             </td>
             <td id="3-4-2">
-                <textarea id="3-4-2-0" type="textarea" class="box"></textarea>
+                <textarea id="3-4-2-0" type="textarea" class="box">1</textarea>
             </td>
         </tr>
         <tr id="3-5">
@@ -500,7 +501,7 @@
                 <label id="3-5-0-0" type="label" class="box">Роялти, %</label>
             </td>
             <td id="3-5-1">
-                <textarea id="3-5-1-0" type="textarea" class="box"></textarea>
+                <textarea id="3-5-1-0" type="textarea" class="box">0</textarea>
             </td>
         </tr>
         <tr id="3-6">
@@ -508,7 +509,7 @@
                 <label id="3-6-0-0" type="label" class="box">Паушальный взнос, руб</label>
             </td>
             <td id="3-6-1">
-                <textarea id="3-6-1-0" type="textarea" class="box"></textarea>
+                <textarea id="3-6-1-0" type="textarea" class="box">0</textarea>
             </td>
         </tr>
         <tr id="3-7">
@@ -516,7 +517,7 @@
                 <label id="3-7-0-0" type="label" class="box">Адм расходы в месяц, руб</label>
             </td>
             <td id="3-7-1">
-                <textarea id="3-7-1-0" type="textarea" class="box"></textarea>
+                <textarea id="3-7-1-0" type="textarea" class="box">25000</textarea>
             </td>
         </tr>
         <tr id="3-8">
@@ -524,7 +525,7 @@
                 <label id="3-8-0-0" type="label" class="box">Логистика, руб</label>
             </td>
             <td id="3-8-1">
-                <textarea id="3-8-1-0" type="textarea" class="box"></textarea>
+                <textarea id="3-8-1-0" type="textarea" class="box">45000</textarea>
             </td>
         </tr>
         <tr id="3-9">
@@ -532,7 +533,7 @@
                 <label id="3-9-0-0" type="label" class="box">Индексация ЗП и АХР и логистики на 2-й год, %</label>
             </td>
             <td id="3-9-1">
-                <textarea id="3-9-1-0" type="textarea" class="box"></textarea>
+                <textarea id="3-9-1-0" type="textarea" class="box">5</textarea>
             </td>
         </tr>
         <tr id="3-10">
@@ -540,7 +541,7 @@
                 <label id="3-10-0-0" type="label" class="box">Ставка эквайринга, %</label>
             </td>
             <td id="3-10-1">
-                <textarea id="3-10-1-0" type="textarea" class="box"></textarea>
+                <textarea id="3-10-1-0" type="textarea" class="box">1.8</textarea>
             </td>
         </tr>
         <tr id="3-11">
@@ -548,7 +549,7 @@
                 <label id="3-11-0-0" type="label" class="box">Доля эквайринга, %</label>
             </td>
             <td id="3-11-1">
-                <textarea id="3-11-1-0" type="textarea" class="box"></textarea>
+                <textarea id="3-11-1-0" type="textarea" class="box">92</textarea>
             </td>
         </tr>
         <tr id="3-12">
@@ -556,7 +557,7 @@
                 <label id="3-12-0-0" type="label" class="box">Себестоимость товара</label>
             </td>
             <td id="3-12-1">
-                <textarea id="3-12-1-0" type="textarea" class="box"></textarea>
+                <textarea id="3-12-1-0" type="textarea" class="box">35</textarea>
             </td>
         </tr>
         <tr id="3-13">
@@ -564,7 +565,7 @@
                 <label id="3-13-0-0" type="label" class="box">Налоги ФОТ</label>
             </td>
             <td id="3-13-1">
-                <textarea id="3-13-1-0" type="textarea" class="box"></textarea>
+                <textarea id="3-13-1-0" type="textarea" class="box">147</textarea>
             </td>
         </tr>
     </table>
@@ -605,19 +606,19 @@
                 <label id="4-3-0-0" type="label" class="box">Реалистичный</label>
             </td>
             <td id="4-3-1">
-                <textarea id="4-3-1-0" type="textarea" class="box"></textarea>
+                <textarea id="4-3-1-0" type="textarea" class="box">1</textarea>
             </td>
             <td id="4-3-2">
-                <textarea id="4-3-2-0" type="textarea" class="box"></textarea>
+                <textarea id="4-3-2-0" type="textarea" class="box">10</textarea>
             </td>
             <td id="4-3-3">
-                <textarea id="4-3-3-0" type="textarea" class="box"></textarea>
+                <textarea id="4-3-3-0" type="textarea" class="box">10</textarea>
             </td>
             <td id="4-3-4">
-                <textarea id="4-3-4-0" type="textarea" class="box"></textarea>
+                <textarea id="4-3-4-0" type="textarea" class="box">10</textarea>
             </td>
             <td id="4-3-5">
-                <textarea id="4-3-5-0" type="textarea" class="box"></textarea>
+                <textarea id="4-3-5-0" type="textarea" class="box">10</textarea>
             </td>
         </tr>
         <tr id="4-4">
@@ -625,7 +626,7 @@
                 <label id="4-4-0-0" type="label" class="box">Оптимистичный</label>
             </td>
             <td id="4-4-1">
-                <textarea id="4-4-1-0" type="textarea" class="box"></textarea>
+                <textarea id="4-4-1-0" type="textarea" class="box">1.2</textarea>
             </td>
         </tr>
         <tr id="4-5">
@@ -633,7 +634,7 @@
                 <label id="4-5-0-0" type="label" class="box">Пессимистичный</label>
             </td>
             <td id="4-5-1">
-                <textarea id="4-5-1-0" type="textarea" class="box"></textarea>
+                <textarea id="4-5-1-0" type="textarea" class="box">0.8</textarea>
             </td>
         </tr>
     </table>
@@ -663,13 +664,19 @@
                 <label id="5-2-0-0" type="label" class="box">Январь</label>
             </td>
             <td id="5-2-1">
-                <textarea id="5-2-1-0" type="textarea" class="box"></textarea>
+                <button id="5-2-1-0" onclick="" type="button">Применить ко всем</button>
+                <br>
+                <textarea id="5-2-1-1" type="textarea" class="box">7</textarea>
             </td>
             <td id="5-2-2">
-                <textarea id="5-2-2-0" type="textarea" class="box"></textarea>
+                <button id="5-2-2-0" onclick="" type="button">Применить ко всем</button>
+                <br>
+                <textarea id="5-2-2-1" type="textarea" class="box">1.28</textarea>
             </td>
             <td id="5-2-3">
-                <textarea id="5-2-3-0" type="textarea" class="box"></textarea>
+                <button id="5-2-3-0" onclick="" type="button">Применить ко всем</button>
+                <br>
+                <textarea id="5-2-3-1" type="textarea" class="box">7699</textarea>
             </td>
         </tr>
         <tr id="5-3">
@@ -677,13 +684,13 @@
                 <label id="5-3-0-0" type="label" class="box">Февраль</label>
             </td>
             <td id="5-3-1">
-                <textarea id="5-3-1-0" type="textarea" class="box"></textarea>
+                <textarea id="5-3-1-0" type="textarea" class="box">7</textarea>
             </td>
             <td id="5-3-2">
-                <textarea id="5-3-2-0" type="textarea" class="box"></textarea>
+                <textarea id="5-3-2-0" type="textarea" class="box">1.28</textarea>
             </td>
             <td id="5-3-3">
-                <textarea id="5-3-3-0" type="textarea" class="box"></textarea>
+                <textarea id="5-3-3-0" type="textarea" class="box">7699</textarea>
             </td>
         </tr>
         <tr id="5-4">
@@ -691,13 +698,13 @@
                 <label id="5-4-0-0" type="label" class="box">Март</label>
             </td>
             <td id="5-4-1">
-                <textarea id="5-4-1-0" type="textarea" class="box"></textarea>
+                <textarea id="5-4-1-0" type="textarea" class="box">7</textarea>
             </td>
             <td id="5-4-2">
-                <textarea id="5-4-2-0" type="textarea" class="box"></textarea>
+                <textarea id="5-4-2-0" type="textarea" class="box">1.28</textarea>
             </td>
             <td id="5-4-3">
-                <textarea id="5-4-3-0" type="textarea" class="box"></textarea>
+                <textarea id="5-4-3-0" type="textarea" class="box">7699</textarea>
             </td>
         </tr>
         <tr id="5-5">
@@ -705,13 +712,13 @@
                 <label id="5-5-0-0" type="label" class="box">Апрель</label>
             </td>
             <td id="5-5-1">
-                <textarea id="5-5-1-0" type="textarea" class="box"></textarea>
+                <textarea id="5-5-1-0" type="textarea" class="box">7</textarea>
             </td>
             <td id="5-5-2">
-                <textarea id="5-5-2-0" type="textarea" class="box"></textarea>
+                <textarea id="5-5-2-0" type="textarea" class="box">1.28</textarea>
             </td>
             <td id="5-5-3">
-                <textarea id="5-5-3-0" type="textarea" class="box"></textarea>
+                <textarea id="5-5-3-0" type="textarea" class="box">7699</textarea>
             </td>
         </tr>
         <tr id="5-6">
@@ -719,13 +726,13 @@
                 <label id="5-6-0-0" type="label" class="box">Май</label>
             </td>
             <td id="5-6-1">
-                <textarea id="5-6-1-0" type="textarea" class="box"></textarea>
+                <textarea id="5-6-1-0" type="textarea" class="box">7</textarea>
             </td>
             <td id="5-6-2">
-                <textarea id="5-6-2-0" type="textarea" class="box"></textarea>
+                <textarea id="5-6-2-0" type="textarea" class="box">1.28</textarea>
             </td>
             <td id="5-6-3">
-                <textarea id="5-6-3-0" type="textarea" class="box"></textarea>
+                <textarea id="5-6-3-0" type="textarea" class="box">7699</textarea>
             </td>
         </tr>
         <tr id="5-7">
@@ -733,13 +740,13 @@
                 <label id="5-7-0-0" type="label" class="box">Июнь</label>
             </td>
             <td id="5-7-1">
-                <textarea id="5-7-1-0" type="textarea" class="box"></textarea>
+                <textarea id="5-7-1-0" type="textarea" class="box">7</textarea>
             </td>
             <td id="5-7-2">
-                <textarea id="5-7-2-0" type="textarea" class="box"></textarea>
+                <textarea id="5-7-2-0" type="textarea" class="box">1.28</textarea>
             </td>
             <td id="5-7-3">
-                <textarea id="5-7-3-0" type="textarea" class="box"></textarea>
+                <textarea id="5-7-3-0" type="textarea" class="box">7699</textarea>
             </td>
         </tr>
         <tr id="5-8">
@@ -747,13 +754,13 @@
                 <label id="5-8-0-0" type="label" class="box">Июль</label>
             </td>
             <td id="5-8-1">
-                <textarea id="5-8-1-0" type="textarea" class="box"></textarea>
+                <textarea id="5-8-1-0" type="textarea" class="box">7</textarea>
             </td>
             <td id="5-8-2">
-                <textarea id="5-8-2-0" type="textarea" class="box"></textarea>
+                <textarea id="5-8-2-0" type="textarea" class="box">1.28</textarea>
             </td>
             <td id="5-8-3">
-                <textarea id="5-8-3-0" type="textarea" class="box"></textarea>
+                <textarea id="5-8-3-0" type="textarea" class="box">7699</textarea>
             </td>
         </tr>
         <tr id="5-9">
@@ -761,13 +768,13 @@
                 <label id="5-9-0-0" type="label" class="box">Август</label>
             </td>
             <td id="5-9-1">
-                <textarea id="5-9-1-0" type="textarea" class="box"></textarea>
+                <textarea id="5-9-1-0" type="textarea" class="box">7</textarea>
             </td>
             <td id="5-9-2">
-                <textarea id="5-9-2-0" type="textarea" class="box"></textarea>
+                <textarea id="5-9-2-0" type="textarea" class="box">1.28</textarea>
             </td>
             <td id="5-9-3">
-                <textarea id="5-9-3-0" type="textarea" class="box"></textarea>
+                <textarea id="5-9-3-0" type="textarea" class="box">7699</textarea>
             </td>
         </tr>
         <tr id="5-10">
@@ -775,13 +782,13 @@
                 <label id="5-10-0-0" type="label" class="box">Сентябрь</label>
             </td>
             <td id="5-10-1">
-                <textarea id="5-10-1-0" type="textarea" class="box"></textarea>
+                <textarea id="5-10-1-0" type="textarea" class="box">7</textarea>
             </td>
             <td id="5-10-2">
-                <textarea id="5-10-2-0" type="textarea" class="box"></textarea>
+                <textarea id="5-10-2-0" type="textarea" class="box">1.28</textarea>
             </td>
             <td id="5-10-3">
-                <textarea id="5-10-3-0" type="textarea" class="box"></textarea>
+                <textarea id="5-10-3-0" type="textarea" class="box">7699</textarea>
             </td>
         </tr>
         <tr id="5-11">
@@ -789,13 +796,13 @@
                 <label id="5-11-0-0" type="label" class="box">Октябрь</label>
             </td>
             <td id="5-11-1">
-                <textarea id="5-11-1-0" type="textarea" class="box"></textarea>
+                <textarea id="5-11-1-0" type="textarea" class="box">7</textarea>
             </td>
             <td id="5-11-2">
-                <textarea id="5-11-2-0" type="textarea" class="box"></textarea>
+                <textarea id="5-11-2-0" type="textarea" class="box">1.28</textarea>
             </td>
             <td id="5-11-3">
-                <textarea id="5-11-3-0" type="textarea" class="box"></textarea>
+                <textarea id="5-11-3-0" type="textarea" class="box">7699</textarea>
             </td>
         </tr>
         <tr id="5-12">
@@ -803,13 +810,13 @@
                 <label id="5-12-0-0" type="label" class="box">Ноябрь</label>
             </td>
             <td id="5-12-1">
-                <textarea id="5-12-1-0" type="textarea" class="box"></textarea>
+                <textarea id="5-12-1-0" type="textarea" class="box">7</textarea>
             </td>
             <td id="5-12-2">
-                <textarea id="5-12-2-0" type="textarea" class="box"></textarea>
+                <textarea id="5-12-2-0" type="textarea" class="box">1.28</textarea>
             </td>
             <td id="5-12-3">
-                <textarea id="5-12-3-0" type="textarea" class="box"></textarea>
+                <textarea id="5-12-3-0" type="textarea" class="box">7699</textarea>
             </td>
         </tr>
         <tr id="5-13">
@@ -817,13 +824,13 @@
                 <label id="5-13-0-0" type="label" class="box">Декабрь</label>
             </td>
             <td id="5-13-1">
-                <textarea id="5-13-1-0" type="textarea" class="box"></textarea>
+                <textarea id="5-13-1-0" type="textarea" class="box">7</textarea>
             </td>
             <td id="5-13-2">
-                <textarea id="5-13-2-0" type="textarea" class="box"></textarea>
+                <textarea id="5-13-2-0" type="textarea" class="box">1.28</textarea>
             </td>
             <td id="5-13-3">
-                <textarea id="5-13-3-0" type="textarea" class="box"></textarea>
+                <textarea id="5-13-3-0" type="textarea" class="box">7699</textarea>
             </td>
         </tr>
     </table>
@@ -997,3 +1004,4 @@
 
 </body>
 </html>
+
